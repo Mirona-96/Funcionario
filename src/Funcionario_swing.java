@@ -89,7 +89,7 @@ void table_load(){
         tblFuncionarioData.setModel(DbUtils.resultSetToTableModel(rs));
 
     } catch (SQLException e) {
-        throw new RuntimeException(e);
+        e.printStackTrace();
     }
 }
     private void listar() {

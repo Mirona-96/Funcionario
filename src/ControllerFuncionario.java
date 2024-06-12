@@ -24,7 +24,6 @@ public class ControllerFuncionario {
     public  static ArrayList<Funcionario> listaFuncionario() throws SQLException {
         ArrayList<Funcionario>funcionarios = new ArrayList<Funcionario>();
 
-
         conn = Conexao.conectar();
         stmt = null;
         stmt = conn.prepareStatement("SELECT * FROM funcionarios");
